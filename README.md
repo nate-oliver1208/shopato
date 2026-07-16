@@ -4,6 +4,28 @@ O **Shopato** é um marketplace de comércio eletrônico focado na compra e vend
 
 Este projeto foi desenvolvido como requisito avaliativo para a disciplina de **Desenvolvimento Full-Stack**, no primeiro semestre de 2025, no curso de **Bacharelado em Engenharia da Computação** do **Instituto Federal de São Paulo (IFSP) - Campus Guarulhos**.
 
+### [Página Inicial da Loja]
+
+<img width="800" alt="Captura de tela 2026-07-15 165834" src="https://github.com/user-attachments/assets/71490dc4-cb7c-4dca-8724-d6ff6a1a4499" />
+
+---
+
+### [Perfil / Seus Anúncios]
+
+<img width="800" alt="Captura de tela 2026-07-15 165948" src="https://github.com/user-attachments/assets/24f7c16c-df05-4147-bbfa-8a5575c9412b" />
+
+---
+
+### [Detalhes do Anúncio]
+
+<img width="800" alt="Captura de tela 2026-07-15 170038" src="https://github.com/user-attachments/assets/71d80214-2303-4f27-b933-7a0cfcb8f10b" />
+
+---
+
+### [Seu Carrinho]
+
+<img width="800" alt="Captura de tela 2026-07-15 170110" src="https://github.com/user-attachments/assets/c4925082-2d9c-4930-a1ca-64a60cc3c690" />
+
 ---
 
 ## A Jornada de Evolução: Do PHP Procedural ao Laravel MVC
@@ -85,5 +107,5 @@ Para explorar a plataforma como um usuário já cadastrado sem a necessidade de 
 Projeto prático desenvolvido para consolidação de conceitos em engenharia de software e desenvolvimento web full-stack.
 
 *   **Professor Orientador:** Reginaldo do Prado.
-*   **Autores (Alunos):**
+*   **Autor (Aluno):**
     *   Nathan Iglesias Gomes de Oliveira
