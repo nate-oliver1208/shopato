@@ -1,5 +1,7 @@
 # Shopato - Plataforma de E-commerce de Usados
 
+*Leia isto em outros idiomas: [English 🇺🇸](README.md)*
+
 O **Shopato** é um marketplace de comércio eletrônico focado na compra e venda de produtos usados (estilo OLX), com identidade visual inspirada no Mercado Livre e Shopee. A plataforma simula um ambiente completo onde usuários comuns podem criar contas, publicar anúncios detalhados com imagens de seus produtos e realizar compras simuladas através de um carrinho virtual interativo.
 
 Este projeto foi desenvolvido como requisito avaliativo para a disciplina de **Desenvolvimento Full-Stack**, no primeiro semestre de 2025, no curso de **Bacharelado em Engenharia da Computação** do **Instituto Federal de São Paulo (IFSP) - Campus Guarulhos**.
