@@ -1,111 +1,113 @@
-# Shopato - Plataforma de E-commerce de Usados
+# Shopato - Used Goods E-commerce Platform
 
-O **Shopato** é um marketplace de comércio eletrônico focado na compra e venda de produtos usados (estilo OLX), com identidade visual inspirada no Mercado Livre e Shopee. A plataforma simula um ambiente completo onde usuários comuns podem criar contas, publicar anúncios detalhados com imagens de seus produtos e realizar compras simuladas através de um carrinho virtual interativo.
+*Read this in other languages: [Português 🇧🇷](README_PT.md)*
 
-Este projeto foi desenvolvido como requisito avaliativo para a disciplina de **Desenvolvimento Full-Stack**, no primeiro semestre de 2025, no curso de **Bacharelado em Engenharia da Computação** do **Instituto Federal de São Paulo (IFSP) - Campus Guarulhos**.
+**Shopato** is an e-commerce marketplace focused on buying and selling used items (OLX-style), featuring a visual identity inspired by Mercado Livre and Shopee. The platform simulates a full-featured environment where standard users can create accounts, publish detailed listings with images of their products, and make simulated purchases through an interactive virtual shopping cart.
 
-### [Página Inicial da Loja]
+This project was developed as an evaluation requirement for the **Full-Stack Development** course during the first semester of 2025, in the **Bachelor's Degree in Computer Engineering** program at **Instituto Federal de São Paulo (IFSP) - Campus Guarulhos**.
+
+### [Store Homepage]
 
 <img width="800" alt="Captura de tela 2026-07-15 165834" src="https://github.com/user-attachments/assets/71490dc4-cb7c-4dca-8724-d6ff6a1a4499" />
 
 ---
 
-### [Perfil / Seus Anúncios]
+### [Profile / Your Listings]
 
 <img width="800" alt="Captura de tela 2026-07-15 165948" src="https://github.com/user-attachments/assets/24f7c16c-df05-4147-bbfa-8a5575c9412b" />
 
 ---
 
-### [Detalhes do Anúncio]
+### [Listing Details]
 
 <img width="800" alt="Captura de tela 2026-07-15 170038" src="https://github.com/user-attachments/assets/71d80214-2303-4f27-b933-7a0cfcb8f10b" />
 
 ---
 
-### [Seu Carrinho]
+### [Shopping Cart]
 
 <img width="800" alt="Captura de tela 2026-07-15 170110" src="https://github.com/user-attachments/assets/c4925082-2d9c-4930-a1ca-64a60cc3c690" />
 
 ---
 
-## A Jornada de Evolução: Do PHP Procedural ao Laravel MVC
+## Evolution Journey: From Procedural PHP to Laravel MVC
 
-O maior diferencial técnico deste projeto está na sua arquitetura. O desenvolvimento foi dividido em duas fases distintas, simulando um cenário real de modernização de software legada:
+The main technical highlight of this project lies in its architecture. Development was divided into two distinct phases, simulating a real-world software legacy modernization scenario:
 
-1.  **Fase Inicial (Legado):** O sistema foi construído inicialmente em PHP puro (procedural), utilizando uma arquitetura baseada em páginas isoladas e acesso direto ao banco de dados.
-2.  **Fase de Migração:** Toda a aplicação foi migrada para o framework **Laravel**. O código foi completamente refatorado e reorganizado sob o padrão **MVC (Model-View-Controller)**, utilizando rotas centralizadas, controllers especializados, componentes Blade reutilizáveis e ORM para manipulação do banco de dados de forma segura.
+1.  **Legacy Phase:** The system was initially built using pure (procedural) PHP, utilizing an architecture based on isolated pages and direct database queries.
+2.  **Migration Phase:** The entire application was migrated to the **Laravel** framework. The codebase was completely refactored and reorganized under the **MVC (Model-View-Controller)** pattern, leveraging centralized routing, specialized controllers, reusable Blade components, and ORM for secure database operations.
 
 ---
 
-## Tecnologias e Ferramentas Utilizadas
+## Technologies & Tools Used
 
-*   **Linguagem de Programação:** PHP.
-*   **Framework Backend:** Laravel.
-*   **Banco de Dados Relacional:** MariaDB / phpMyAdmin.
+*   **Programming Language:** PHP.
+*   **Backend Framework:** Laravel.
+*   **Relational Database:** MariaDB / phpMyAdmin.
 *   **Frontend & Interface:**
-    *   Blade Templates (Sistema de templates nativo do Laravel).
-    *   Template Base AdminLTE (com customização inspirada nas cores amarelo e branco do Mercado Livre).
-    *   Bootstrap (Layout responsivo).
-    *   HTML5, CSS3 e JavaScript (Manipulações dinâmicas no cliente).
-    *   Font Awesome (Biblioteca de ícones).
-*   **Ferramenta de Desenvolvimento:** VS Code.
+    *   Blade Templates (Laravel's native templating engine).
+    *   AdminLTE Base Template (customized with yellow and white color schemes inspired by Mercado Livre).
+    *   Bootstrap (Responsive layout).
+    *   HTML5, CSS3, and JavaScript (Client-side dynamic interactions).
+    *   Font Awesome (Icon library).
+*   **Development Tool:** VS Code.
 
 ---
 
-## Principais Funcionalidades da Aplicação
+## Key Features
 
-*   **Autenticação Nativa:** Registro de usuários, controle de login/logout e persistência segura de sessão utilizando o ecossistema nativo do Laravel.
-*   **Gerenciamento de Perfil:** Página dedicada do usuário exibindo dados cadastrais, quantidade de itens anunciados, lista de anúncios ativos e opção de alteração de foto de perfil.
-*   **Sistema de Anúncios Dinâmicos:** Criação de anúncios contendo título, descrição detalhada, preço e upload de até 3 imagens do produto. Cada anúncio possui uma página pública com galeria de fotos, informações de contato do vendedor e seletor de quantidade para compra.
-*   **Lojas Personalizadas:** Cada vendedor cadastrado possui uma página pública de "loja", exibindo sua localização, foto de perfil e vitrine contendo todos os seus produtos anunciados.
-*   **Carrinho de Compras:** Adição de itens ao carrinho, ajuste de quantidade desejada com atualização automática de subtotal e valor total, além de opção para remoção de itens.
-*   **Página Institucional:** Seção "Sobre" contendo o propósito acadêmico do projeto, descrição do fluxo e avaliações fictícias de usuários.
-
----
-
-## Segurança e Validação de Dados
-
-A aplicação implementa validações robustas em duas camadas para blindar o sistema de falhas e vulnerabilidades:
-1.  **Camada do Cliente (Frontend):** Validações rápidas em formulários utilizando atributos nativos do HTML5 e scripts em JavaScript para melhorar a experiência do usuário (UX).
-2.  **Camada do Servidor (Backend):** Validação rígida de tipos de arquivos (uploads de imagens), campos obrigatórios e sanitização de dados de entrada através do validador integrado do Laravel, garantindo a integridade e segurança contra injeções de dados.
+*   **Native Authentication:** User registration, login/logout control, and secure session persistence powered by Laravel's native ecosystem.
+*   **Profile Management:** Dedicated user profile page displaying account details, total listed items, active listings, and profile picture updates.
+*   **Dynamic Listings System:** Creation of product listings with titles, detailed descriptions, prices, and upload of up to 3 product images. Each listing features a public view with a photo gallery, seller contact info, and a quantity selector.
+*   **Custom Storefronts:** Every registered seller has a public "storefront" page displaying their location, profile picture, and a gallery showcasing all their active listings.
+*   **Shopping Cart:** Add items to cart, adjust quantities with real-time automatic subtotal and total updates, and item removal option.
+*   **About / Institutional Page:** "About" section detailing the academic purpose of the project, platform workflow overview, and mock user reviews.
 
 ---
 
-## Como Executar o Projeto Localmente
+## Security & Data Validation
 
-Siga as etapas abaixo para configurar o ambiente e rodar o projeto na sua máquina:
+The application enforces multi-layer validations to shield the system against vulnerabilities and errors:
+1.  **Client-Side Layer (Frontend):** Instant form validations using native HTML5 attributes and JavaScript scripts to enhance User Experience (UX).
+2.  **Server-Side Layer (Backend):** Strict file-type validation (image uploads), required field checks, and input sanitization via Laravel's built-in validator, ensuring data integrity and preventing injection attacks.
 
-1.  **Preparar o Ambiente de Servidor Local:**
-    *   Certifique-se de ter o **XAMPP** (ou ambiente similar com suporte a PHP e MariaDB/MySQL) instalado e com os serviços de Apache e MySQL ativos.
-2.  **Posicionar os Arquivos:**
-    *   Mova ou clone a pasta `shopato` para o diretório de publicação do seu servidor local (ex: `C:\xampp\htdocs\` no Windows).
-3.  **Configurar o Banco de Dados:**
-    *   Acesse o gerenciador do banco de dados (como o phpMyAdmin) e crie uma nova base de dados.
-    *   Importe o arquivo de banco de dados `duck.sql` fornecido junto ao projeto para estruturar as tabelas e dados iniciais.
-4.  **Ajustar as Variáveis de Ambiente:**
-    *   Na pasta raiz do projeto, configure o arquivo `.env` com as credenciais de conexão do seu banco de dados local (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`).
-5.  **Rodar a Aplicação:**
-    *   Abra o terminal dentro da pasta `shopato` e execute o comando:
+---
+
+## How to Run the Project Locally
+
+Follow the steps below to configure the environment and run the project locally:
+
+1.  **Prepare Local Server Environment:**
+    *   Ensure **XAMPP** (or a similar stack supporting PHP and MariaDB/MySQL) is installed with Apache and MySQL services running.
+2.  **Place Project Files:**
+    *   Move or clone the `shopato` folder into your local server's web root directory (e.g., `C:\xampp\htdocs\` on Windows).
+3.  **Configure the Database:**
+    *   Open your database management tool (such as phpMyAdmin) and create a new database.
+    *   Import the provided `duck.sql` database file to establish tables and initial data.
+4.  **Configure Environment Variables:**
+    *   In the project root directory, configure the `.env` file with your local database credentials (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`).
+5.  **Run the Application:**
+    *   Open terminal inside the `shopato` folder and execute:
         ```bash
         php artisan serve
         ```
-    *   Acesse o endereço indicado no terminal (geralmente `http://127.0.0.1:8000`) no seu navegador.
+    *   Access the local URL provided in the terminal (typically `http://127.0.0.1:8000`) in your browser.
 
 ---
 
-## Credenciais Homologadas para Testes Rápidos
+## Testing Credentials
 
-Para explorar a plataforma como um usuário já cadastrado sem a necessidade de criar uma nova conta, utilize o seguinte acesso homologado:
+To explore the platform as an existing user without creating a new account, use the following pre-configured credentials:
 
-*   **E-mail:** `email@gmail.com`
-*   **Senha:** `senha`
+*   **Email:** `email@gmail.com`
+*   **Password:** `senha`
 
 ---
 
-## Informações Acadêmicas e Autores
+## Academic Information & Authors
 
-Projeto prático desenvolvido para consolidação de conceitos em engenharia de software e desenvolvimento web full-stack.
+Practical project developed to consolidate software engineering and full-stack web development concepts.
 
-*   **Professor Orientador:** Reginaldo do Prado.
-*   **Autor (Aluno):**
+*   **Course Advisor / Professor:** Reginaldo do Prado.
+*   **Author (Student):**
     *   Nathan Iglesias Gomes de Oliveira
